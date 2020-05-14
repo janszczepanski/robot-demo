@@ -1,2 +1,2 @@
-robot login_tests
+robot --variable BROWSER:Firefox login_tests
 
