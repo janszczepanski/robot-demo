@@ -1,2 +1,3 @@
-robot --variable BROWSER:Firefox login_tests
+./cleanup.sh
 
+robot --variable BROWSER:Firefox login_tests
