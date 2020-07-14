@@ -7,7 +7,7 @@ Resource          resource.robot
 
 *** Test Cases ***
 Valid Login
-    [Tags]  ROB-11
+    [Tags]  ROB-11  UI
     Open Browser To Login Page
     Input Username    demo
     Input Password    mode
