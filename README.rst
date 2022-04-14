@@ -125,6 +125,14 @@ If the application was started by double-clicking ``demoapp/server.py``
 file, it can be shut down by closing the opened window. If it was
 executed from the command line, using ``Ctrl-C`` is enough.
 
+There's a buggy implementation variant of this server, where the expected password was changed on purpose, so that the valid login test fails.
+It can be started either by double clicking
+``demoapp/buggy_server.py`` file in a file manager or by executing it from the
+command line::
+
+    python demoapp/buggy_server.py
+   
+
 Running tests
 -------------
 
@@ -144,6 +152,12 @@ options supported by Robot Framework::
 
 Run ``robot --help`` for more information about the command line usage and see
 `Robot Framework User Guide`_ for more details about test execution in general.
+
+
+Note: if you run the tests against the buggy server implementation, two tests will fail (and screenshot will be taken for the failed keyword, and it will be embed on the output.xml report):
+
+- Login Tests.Valid Login
+- Login Tests.Gherkin Login
 
 Using different browsers
 ------------------------
