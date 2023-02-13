@@ -7,7 +7,7 @@ Documentation     A resource file with reusable keywords and variables.
 Library           SeleniumLibrary	run_on_failure=Capture Page Screenshot	screenshot_root_directory=EMBED
 
 *** Variables ***
-${SERVER}         192.168.56.1:7272
+${SERVER}         http://v2202301110370217575.megasrv.de:7272
 ${BROWSER}        Firefox
 ${DELAY}          0
 ${VALID USER}     demo
